@@ -52,7 +52,7 @@ export function NewTransactionModal() {
                 <form onSubmit={handleSubmit(handleCreateNewTransaction)} action="">
                     <input {...register('description')} type="text" placeholder='Descrição' required />
                     <input {...register('price', { valueAsNumber: true })} type="number" placeholder='Preço' required />
-                    <input {...register('category')} type="text" placeholder='Categporia' required />
+                    <input {...register('category')} type="text" placeholder='Categoria' required />
 
                     <Controller
                         control={control}
